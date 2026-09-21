@@ -1,0 +1,16 @@
+import subprocess
+
+command = [
+    "aws",
+    "ec2",
+    "describe-instances",
+    "--region",
+    "eu-north-1",
+    "--query",
+    "Reservations[].Instances[].{ID:InstanceId,State:State.Name,Type:InstanceType,PrivateIP:PrivateIpAddress,PublicIP:PublicIpAddress}",
+    "--output",
+    "table"
+]
+
+result = subprocess.run(
+    comman
