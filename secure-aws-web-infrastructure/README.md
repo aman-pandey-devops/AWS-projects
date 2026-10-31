@@ -56,21 +56,21 @@ Traffic flow: Internet -> Internet Gateway -> VPC -> public subnet -> EC2 (Nginx
 
 **Nginx served from EC2**
 
-![Nginx welcome page](screenshots/10-nginx-browser.png)
+![Nginx welcome page](screenshots-01/10-nginx-browser.png)
 
 **S3 read works through the IAM Role (no access keys)**
 
-![aws s3 ls success](screenshots/14-s3-ls-success.png)
+![aws s3 ls success](screenshots-01/14-s3-ls-success.png)
 
 **S3 upload denied: least privilege in action**
 
-![S3 upload denied](screenshots/15-s3-upload-denied.png)
+![S3 upload denied](screenshots-01/15-s3-upload-denied.png)
 
 **CloudWatch alarm triggered by a CPU stress test**
 
-![Alarm in ALARM state](screenshots/18b-alarm-triggered.png)
+![Alarm in ALARM state](screenshots-01/18b-alarm-triggered.png)
 
-All stage-by-stage screenshots are in the [`screenshots/`](screenshots/) folder.
+All stage-by-stage screenshots are in the [`screenshots-01/`](screenshots-01/) folder.
 
 ---
 
